@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="{{ url_for('static', filename='logo.png') }}" class="header-logo">
+
+    <div>
+        <h1>MBL Dental Clinic</h1>
+        <p class="subtitle">Edit Inventory Item</p>
+    </div>
+</header>
+
+<div class="form-card">
+    <h2>Edit Supply</h2>
+
+    <form method="POST">
+        <input type="text" name="item_name" value="{{ item.item_name }}" required>
+        <input type="text" name="category" value="{{ item.category }}" required>
+        <input type="number" name="quantity" value="{{ item.quantity }}" required>
+        <input type="text" name="unit" value="{{ item.unit }}" required>
+        <input type="number" name="minimum_stock" value="{{ item.minimum_stock }}" required>
+
+        <button type="submit">💾 Update Item</button>
+    </form>
+
+    <a class="back-link" href="/">← Back to Inventory</a>
+</div>
+
+</body>
+</html>

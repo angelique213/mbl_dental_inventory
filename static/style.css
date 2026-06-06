@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff5fb, #f4fff3);
+    margin: 0;
+    color: #222;
+}
+
+/* Header */
+.header{
+    background: linear-gradient(90deg, #d1007a, #39d60a);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+.header-logo{
+    height: 105px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.header h1{
+    margin: 0;
+    color: white;
+    font-size: 38px;
+}
+
+.subtitle{
+    margin: 5px 0 0;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Dashboard */
+.dashboard{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background: white;
+    width: 320px;
+    margin: 35px auto;
+    padding: 28px;
+    border-radius: 22px;
+    border-top: 8px solid #39ff14;
+    box-shadow: 0 10px 30px rgba(209,0,122,0.15);
+    text-align: center;
+}
+
+.card p{
+    font-size: 42px;
+    font-weight: bold;
+    color: #d1007a;
+    margin: 0;
+}
+
+/* Inventory section */
+.section-header{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2{
+    margin: 0;
+    font-size: 28px;
+}
+
+.add-button{
+    background: #39d60a;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    white-space: nowrap;
+}
+
+.add-button:hover{
+    background: #2fb308;
+}
+
+/* Table */
+table{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+th{
+    background: #d1007a;
+    color: white;
+    padding: 15px;
+}
+
+td{
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background: #fff7fc;
+}
+
+tr:hover{
+    background: #edffe8;
+}
+
+/* Buttons */
+.edit-btn{
+    background: #d1007a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.delete-btn{
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.edit-btn:hover{
+    background: #aa0062;
+}
+
+.delete-btn:hover{
+    background: #cc0000;
+}
+
+/* Form pages */
+.form-card{
+    background: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button{
+    background: #39d60a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #2fb308;
+}
+
+.back-link{
+    display: block;
+    margin-top: 30px;
+    color: #d1007a;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.button-group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.transactions-btn{
+    background: #d1007a;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.transactions-btn:hover{
+    background: #aa0062;
+}

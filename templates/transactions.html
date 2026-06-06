@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="{{ url_for('static', filename='logo.png') }}" class="header-logo">
+
+    <div>
+        <h1>MBL Dental Clinic</h1>
+        <p class="subtitle">Transaction History</p>
+    </div>
+</header>
+
+<div class="section-header">
+    <h2>Inventory Transactions</h2>
+
+    <a class="add-button" href="/">
+        ← Back to Inventory
+    </a>
+</div>
+
+<table>
+
+    <tr>
+        <th>Item Name</th>
+        <th>Transaction Type</th>
+        <th>Quantity</th>
+        <th>Date</th>
+    </tr>
+
+    {% for record in records %}
+    <tr>
+        <td>{{ record.item_name }}</td>
+        <td>{{ record.transaction_type }}</td>
+        <td>{{ record.quantity }}</td>
+        <td>{{ record.transaction_date }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
